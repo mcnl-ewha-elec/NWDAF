@@ -18,15 +18,16 @@ ML algorithm to predict next day's energy consumption of Smart Factory
 - aachensfbending.csv
 - aachensflasercutting.csv
 - aachensflasershaping.csv
-총 4가지 파일을 다운받아서 data_preprocessing.py를 실행시켜 머신러닝 알고리즘 실행에 필요한 데이터를 만든다.
 
-2. parallel.py 혹은 series.py를 실행한다
+    4가지 기계의 에너지 사용량 파일을 다운받는다.
+
+2. parallel.py 혹은 series.py를 연다.
 
 3. 해당 파일 안에 각각 Adaboost, DecisionTree, K-NN 총 3가지 머신러닝 모델이 있으므로 원하는 모델을 제외하고 주석처리한다.
 
-4. 파일을 실행시키고 원하는 예측하고자 하는 날짜를 선택한다.
+4. 코드를 실행시키면 데이터 전처리 과정이 실행됨과 동시에 선택한 머신러닝 모델로 원하는 날짜의 에너지 사용량을 예측할 수 있다.
 
-1주차 (5/18-5/24):5/25 예측, 2주차(5/25-5/31):6/1 예측, 3주차(6/1-6/7):6/8 예측, 4주차(6/8-6/14):6/15 예측
+    1주차(5/18-5/24):5/25 예측, 2주차(5/25-5/31):6/1 예측, 3주차(6/1-6/7):6/8 예측, 4주차(6/8-6/14):6/15 예측
 
 
 
@@ -34,10 +35,9 @@ ML algorithm to predict next day's energy consumption of Smart Factory
 
 <알고리즘이 예측한 사용량과 실제 사용량의 RMSE값을 머신러닝 모델별, 알고리즘 별로 비교한 표>
 
-![telegram-cloud-photo-size-5-6098029360847105161-y](https://user-images.githubusercontent.com/88702793/128999072-eb354bcb-c2f1-4256-a573-72b0edfad6d4.jpg)
+![photo_2021-08-11 16 48 43](https://user-images.githubusercontent.com/87114999/129167496-d14ccb58-f277-41f2-bab7-a3adea12ca2b.jpeg)
 
 ![photo_2021-08-11 16 49 22](https://user-images.githubusercontent.com/87114999/129133894-7136535a-e091-4199-bb06-a4c64cc610ea.jpeg)
 
+![photo_2021-08-12 17 46 33](https://user-images.githubusercontent.com/87114999/129167459-a53e7580-c890-4834-9471-79f72545543d.jpeg)
 
-
-@Decisoin Tree는 알고리즘 돌리는 중
