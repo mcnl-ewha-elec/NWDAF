@@ -23,7 +23,7 @@ ML algorithm to predict next day's energy consumption of Smart Factory
 
 2. parallel.py 혹은 series.py를 연다.
 
-3. 해당 파일 안에 각각 Adaboost, DecisionTree, K-NN 총 3가지 머신러닝 모델이 있으므로 원하는 모델을 제외하고 주석처리한다.
+3. 해당 파일 안에 각각 Adaboost, K-NN, DecisionTree 총 3가지 머신러닝 모델이 있으므로 원하는 모델을 제외하고 주석처리한다.
 
 4. 코드를 실행시키면 데이터 전처리 과정이 실행됨과 동시에 선택한 머신러닝 모델로 원하는 날짜의 에너지 사용량을 예측할 수 있다.
 
