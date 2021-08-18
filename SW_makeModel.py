@@ -60,7 +60,7 @@ def adaboostModel(x, y, modelnum,adaboostsample, learningrate,ABmodel_list):
 
 # Making kNN Model
 #k = square root of the total number of samples
-def kNNModel(k,x,y,modelnum,kNNmodellist):
+def kNNModel(k,x,y,modelnum,kNNmodel_list):
     kNN_model = KNeighborsRegressor(n_neighbors=k, weights="distance").fit(x,y)
     print(str(modelnum) + '번째 kNN model is made!')
     kNNmodel_list.append(kNN_model)
