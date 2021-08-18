@@ -253,10 +253,6 @@ elif change == 'n':
 
 # 각 알고리즘별 모델 만들기
 
-ABmodel_list=[]
-DTmodel_list=[]
-kNNmodel_list=[]
-
 DT_repeatedRMSE=[]
 AB_repeatedRMSE=[]
 kNN_repeatedRMSE=[]
@@ -266,6 +262,7 @@ repeatnum = int(repeatnum)
 
 # Decision Tree
 for repeat in range(0,repeatnum):
+    DTmodel_list=[]
     modelnum = 1
     for datanum in range(len(in_energylist)-2):
         DTmodel_list=Model.decisiontreeModel(in_energylist[datanum],energylist[datanum+1],modelnum,maxdepth,decisionsample,DTmodel_list)
@@ -284,6 +281,7 @@ DT_RMSE_avg = np.mean(DT_repeatedRMSE)
 
 # Adaboost
 for repeat in range(0,repeatnum):
+    ABmodel_list=[]
     modelnum = 1
     for datanum in range(len(in_energylist) - 2):
         # Adaboost
@@ -303,6 +301,7 @@ AB_repeatedRMSE = np.array(AB_repeatedRMSE)
 AB_RMSE_avg = np.mean(AB_repeatedRMSE)
 
 # kNN은 sampling 과정이 없으므로 반복하지 않는다.
+kNNmodel_list=[]
 modelnum = 1
 for datanum in range(len(in_energylist)-2):
     # kNN
