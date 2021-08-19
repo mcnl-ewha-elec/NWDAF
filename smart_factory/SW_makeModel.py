@@ -1,4 +1,4 @@
-# Decision Tree, Adaboost, kNN
+# Decision Tree, Adaboost, KNN
 
 # EMA 여부 정할 수 있음.
 
@@ -20,7 +20,7 @@ from sklearn.ensemble import BaggingRegressor
 
 DTmodel_list=[]
 ABmodel_list=[]
-kNNmodel_list=[]
+KNNmodel_list=[]
 
 # Low Pass Filter (EMA 방식)
 def LPF(f_cut,data):
@@ -58,13 +58,13 @@ def adaboostModel(x, y, modelnum,adaboostsample, learningrate,ABmodel_list):
     ABmodel_list.append(adaboost_model)
     return ABmodel_list
 
-# Making kNN Model
-#k = square root of the total number of samples
-def kNNModel(k,x,y,modelnum,kNNmodel_list):
-    kNN_model = KNeighborsRegressor(n_neighbors=k, weights="distance").fit(x,y)
-    print(str(modelnum) + '번째 kNN model is made!')
-    kNNmodel_list.append(kNN_model)
-    return kNNmodel_list
+# Making KNN Model
+
+def KNNModel(k,x,y,modelnum,KNNmodel_list):
+    KNN_model = KNeighborsRegressor(n_neighbors=k, weights="distance").fit(x,y)
+    print(str(modelnum) + '번째 KNN model is made!')
+    KNNmodel_list.append(KNN_model)
+    return KNNmodel_list
 
 
 # implement models
@@ -80,27 +80,20 @@ def PredictandRMSE(modellst,test_x,goal_x,test_y,goal_y):
         RMSE_test_list.append(RMSE_test)
         RMSE_goal_list.append(RMSE_goal)
         predict_list.append(predict)
-    # print('test 날짜에 대한 RMSE값: ', np.round(RMSE_test_list, 3))
+    # print('test 날짜에 대한 RMSE값 (가중치 부여 기준): ', np.round(RMSE_test_list, 3))
     # print('실제로 예측하고자 하는 날짜에 대한 RMSE값: ', np.round(RMSE_goal_list, 3))
     # print()
     return RMSE_test_list, predict_list
 
 # normalization and weight
-def normalization(RMSE_test_list, predict_list):
-
-    # RMSE normalization by MinMaxScaler
-    minmaxRMSE = []
-    for value in RMSE_test_list:
-        normalized = (value - min(RMSE_test_list)) / (max(RMSE_test_list) - min(RMSE_test_list))
-        minmaxRMSE.append(normalized)
-    print('MinMax Scaled RMSE:', minmaxRMSE)
+def normalization(RMSE_test_list, predict_list, tot_model):
 
     multiplyScale = []
-    minmaxRMSE_rev = []
-    for num in range(0, 5):
-        minmaxRMSE_rev.append(1 - minmaxRMSE[num])
-    for num in range(0, 5):
-        multiplyScale.append(minmaxRMSE_rev[num] / sum(minmaxRMSE_rev))
+    RMSE_rev = []
+    for num in range(0, tot_model):
+        RMSE_rev.append(1/RMSE_test_list[num])
+    for num in range(0, tot_model):
+        multiplyScale.append(RMSE_rev[num] / sum(RMSE_rev))
 
     print('Real multiply value:', multiplyScale)
 
@@ -110,4 +103,6 @@ def normalization(RMSE_test_list, predict_list):
         weighted_predict += predict * weight
 
     return weighted_predict
+
+
 
