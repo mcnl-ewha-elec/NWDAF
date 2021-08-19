@@ -20,8 +20,8 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import BaggingRegressor
 import os
 import csv
-
 import SW_makeModel as Model
+
 ### Original Data -> 주차별 Data로 분리 ###
 machine_list=['3drobotwelter', 'bending', 'lasercutting', 'lasershaping']
 for machine in machine_list:
@@ -136,7 +136,7 @@ w = input('원하는 주차의 숫자를 입력하세요 (1-4) : ')
 df = pd.read_csv('data_'+str(w)+'w.csv')
 y = df['Energy consumption per timeslot [kWh]'].to_numpy()
 
-# next Mon: Goal data
+# next Mon(energy 8): Goal data
 energy7_real = y[8640 : 10080] # NOT Low Pass Filtered
 energy8_real = y[10080 : 11520] # NOT Low Pass Filtered
 
@@ -204,6 +204,8 @@ test_y = energy7
 goal_x = in_energy7
 goal_y = energy8
 
+tot_model=len(in_energylist)-2
+print('model 개수 : ', tot_model)
 
 # 각 알고리즘 model 만드는 함수
 # model을 만들되 pickle로 따로 저장하지 않음.
@@ -220,7 +222,7 @@ if change == 'y':
     decisionsample = int(decisionsample)
     while (decisionsample <= 0):
         print(" 0 이상 자연수를 입력하세요.")
-        maxdepth = input("Sampling number of Decision Tree (권장=400):")
+        decisionsample = input("Sampling number of Decision Tree (권장=400):")
 
     # decision tree max depth 정하기
     maxdepth = input ("Max depth of Decision Tree (if 0, default=None):")
@@ -264,12 +266,12 @@ repeatnum = int(repeatnum)
 for repeat in range(0,repeatnum):
     DTmodel_list=[]
     modelnum = 1
-    for datanum in range(len(in_energylist)-2):
+    for datanum in range(tot_model):
         DTmodel_list=Model.decisiontreeModel(in_energylist[datanum],energylist[datanum+1],modelnum,maxdepth,decisionsample,DTmodel_list)
         modelnum +=1
 
     DT_RMSEtest_list, DT_predict_list = Model.PredictandRMSE(DTmodel_list,test_x,goal_x,test_y,goal_y)
-    DT_weighted = Model.normalization(DT_RMSEtest_list, DT_predict_list)
+    DT_weighted = Model.normalization(DT_RMSEtest_list, DT_predict_list, tot_model)
 
     # final RMSE
     RMSE_final = mean_squared_error(goal_y, DT_weighted, squared=False)
@@ -283,13 +285,13 @@ DT_RMSE_avg = np.mean(DT_repeatedRMSE)
 for repeat in range(0,repeatnum):
     ABmodel_list=[]
     modelnum = 1
-    for datanum in range(len(in_energylist) - 2):
+    for datanum in range(tot_model):
         # Adaboost
         ABmodel_list=Model.adaboostModel(in_energylist[datanum],energylist[datanum+1],modelnum,adaboostsample,learningrate,ABmodel_list)
         modelnum += 1
 
     AB_RMSEtest_list, AB_predict_list = Model.PredictandRMSE(ABmodel_list,test_x,goal_x,test_y,goal_y)
-    AB_weighted = Model.normalization(AB_RMSEtest_list, AB_predict_list)
+    AB_weighted = Model.normalization(AB_RMSEtest_list, AB_predict_list, tot_model)
 
     # final RMSE
     RMSE_final = mean_squared_error(goal_y, AB_weighted, squared=False)
@@ -303,14 +305,14 @@ AB_RMSE_avg = np.mean(AB_repeatedRMSE)
 # kNN은 sampling 과정이 없으므로 반복하지 않는다.
 kNNmodel_list=[]
 modelnum = 1
-for datanum in range(len(in_energylist)-2):
+for datanum in range(tot_model):
     # kNN
     k = 38  #square root of the total number of samples
     kNNmodel_list=Model.kNNModel(k,in_energylist[datanum], energylist[datanum+1],modelnum,kNNmodel_list)
     modelnum += 1
 
 kNN_RMSEtest_list, kNN_predict_list = Model.PredictandRMSE(kNNmodel_list,test_x,goal_x,test_y,goal_y)
-kNN_weighted = Model.normalization(kNN_RMSEtest_list, kNN_predict_list)
+kNN_weighted = Model.normalization(kNN_RMSEtest_list, kNN_predict_list, tot_model)
 KNN_RMSE = mean_squared_error(goal_y, kNN_weighted, squared=False)
 
 print('################################################')
