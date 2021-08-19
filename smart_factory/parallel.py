@@ -96,7 +96,7 @@ for a in range(3, 8):
                 print(len(y_new_sum))
                 print(len(timestamp))
 
-                # 2 날짜별 csv파일 만들기
+                # 날짜별 csv파일 만들기
 
                 file_name = str(a) + str(b) + '_allmachinesum.csv'
 
@@ -136,9 +136,9 @@ w = input('원하는 주차의 숫자를 입력하세요 (1-4) : ')
 df = pd.read_csv('data_'+str(w)+'w.csv')
 y = df['Energy consumption per timeslot [kWh]'].to_numpy()
 
-# next Mon(energy 8): Goal data
-energy7_real = y[8640 : 10080] # NOT Low Pass Filtered
-energy8_real = y[10080 : 11520] # NOT Low Pass Filtered
+
+energy7_real = y[8640 : 10080] # test_y without LPF
+energy8_real = y[10080 : 11520] # goal_y without LPF
 
 # 모든 data가 순서대로 들어갈 list
 energylist=[] # original
