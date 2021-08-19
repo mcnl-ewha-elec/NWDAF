@@ -1,5 +1,5 @@
 # 1주일치 data > 그 다음주 월요일을 예측하는 병렬 모델
-# Decision Tree, Adaboost, kNN
+# Decision Tree, Adaboost, KNN
 # 성능 test data: 토 > 일 data
 
 # EMA 여부 정할 수 있음.
@@ -196,7 +196,7 @@ in_energy7=energy7.reshape(-1,1) # goal_x
 energylist.append(energy7)
 in_energylist.append(in_energy7)
 
-energy8 = y[10080 : 11520]
+energy8 = y[10080 : 11520] #goal_y
 
 test_x = in_energy6
 test_y = energy7
@@ -257,7 +257,7 @@ elif change == 'n':
 
 DT_repeatedRMSE=[]
 AB_repeatedRMSE=[]
-kNN_repeatedRMSE=[]
+KNN_repeatedRMSE=[]
 repeatnum = input("알고리즘 반복 횟수를 입력하세요:")
 repeatnum = int(repeatnum)
 
@@ -302,18 +302,18 @@ for repeat in range(0,repeatnum):
 AB_repeatedRMSE = np.array(AB_repeatedRMSE)
 AB_RMSE_avg = np.mean(AB_repeatedRMSE)
 
-# kNN은 sampling 과정이 없으므로 반복하지 않는다.
-kNNmodel_list=[]
+# KNN
+# KNN은 sampling 과정이 없으므로 반복하지 않는다.
+KNNmodel_list=[]
 modelnum = 1
 for datanum in range(tot_model):
-    # kNN
     k = 38  #square root of the total number of samples
-    kNNmodel_list=Model.kNNModel(k,in_energylist[datanum], energylist[datanum+1],modelnum,kNNmodel_list)
+    KNNmodel_list=Model.KNNModel(k,in_energylist[datanum], energylist[datanum+1],modelnum,KNNmodel_list)
     modelnum += 1
 
-kNN_RMSEtest_list, kNN_predict_list = Model.PredictandRMSE(kNNmodel_list,test_x,goal_x,test_y,goal_y)
-kNN_weighted = Model.normalization(kNN_RMSEtest_list, kNN_predict_list, tot_model)
-KNN_RMSE = mean_squared_error(goal_y, kNN_weighted, squared=False)
+KNN_RMSEtest_list, KNN_predict_list = Model.PredictandRMSE(KNNmodel_list,test_x,goal_x,test_y,goal_y)
+KNN_weighted = Model.normalization(kNN_RMSEtest_list, KNN_predict_list, tot_model)
+KNN_RMSE = mean_squared_error(goal_y, KNN_weighted, squared=False)
 
 print('################################################')
 print('Decision Tree 병렬 모델의 RMSE(평균) : ', round(DT_RMSE_avg, 3))
@@ -324,7 +324,7 @@ print('Adaboost 병렬 모델의 RMSE (평균) : ', round(AB_RMSE_avg, 3))
 print('Adaboost 병렬 모델의 RMSE 오차:', round(max(AB_repeatedRMSE)-min(AB_repeatedRMSE),3))
 print()
 
-print('kNN 병렬 모델의 RMSE : ', round(KNN_RMSE, 3))
+print('KNN 병렬 모델의 RMSE : ', round(KNN_RMSE, 3))
 print('################################################')
 
 # plot_DecisionTree
@@ -355,7 +355,7 @@ plt.show()
 
 # plot_KNN
 plt.figure(figsize=(20, 10))
-plt.plot(kNN_weighted, label='prediction')
+plt.plot(KNN_weighted, label='prediction')
 plt.plot(energy8_real, label='real')
 ax = plt.axes()
 ax.xaxis.set_major_locator(ticker.MultipleLocator(60))
@@ -363,7 +363,7 @@ plt.xlabel("index")
 plt.ylabel('Energy consumption per timeslot [kWh]')
 plt.xticks(fontsize=10)
 plt.legend()
-plt.title('week' + str(w) + '- kNN parallel', size=20)
+plt.title('week' + str(w) + '- KNN parallel', size=20)
 plt.show()
 
 
@@ -371,7 +371,7 @@ plt.show()
 plt.figure(figsize=(20, 10))
 plt.plot(DT_weighted, label = 'Decision Tree prediction')
 plt.plot(AB_weighted, label = 'Adaboost prediction')
-plt.plot(kNN_weighted, label='kNN prediction')
+plt.plot(KNN_weighted, label='KNN prediction')
 plt.plot(energy8_real, label='real')
 ax = plt.axes()
 ax.xaxis.set_major_locator(ticker.MultipleLocator(60))
