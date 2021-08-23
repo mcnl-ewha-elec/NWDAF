@@ -1,6 +1,5 @@
-# NWDAF
 ## 프로그램 명칭(국문)
-다음날 스마트팩토리 에너지 사용량을 예측하는 에이다부스트 직렬 프로그램
+스마트 팩토리에서 에이다부스트를 이용한 에너지 사용량 예측 시뮬레이터
 
 ## 알고리즘 명칭(영문)
 adaboost series program to predict next day's energy consumption of Smart Factory
@@ -33,15 +32,3 @@ adaboost series program to predict next day's energy consumption of Smart Factor
 <프로그램 예측 결과의 RMSE값을 나타낸 표>
 
 <img src="https://user-images.githubusercontent.com/87114999/130406593-85a416fc-ea5e-49c3-84e0-027339cc0913.png" width="60%" height="60%">
-
-
-<병렬과 직렬 프로그램의 예측 결과를 비교한 표>
-
-<img src="https://user-images.githubusercontent.com/87114999/130406603-ce2d5b70-8734-4714-9bc6-9a73881ef9ba.png" width="60%" height="60%">
-
-
-(이때 병렬 모델의 개수는 13개로 함)
-
-
-
-
