@@ -1,6 +1,5 @@
-# NWDAF
 ## 프로그램 명칭(국문)
-다음날 스마트팩토리 에너지 사용량을 예측하는 에이다부스트 병렬 프로그램
+다중 병렬 에이다부스트의 예측 오차를 이용한 가중 모델 방식을 이용한 에너지 사용량 예측 시뮬레이터
 
 ## 알고리즘 명칭(영문)
 adaboost parallel program to predict next day's energy consumption of Smart Factory
@@ -40,11 +39,3 @@ adaboost parallel program to predict next day's energy consumption of Smart Fact
 <img src="https://user-images.githubusercontent.com/87114999/130408860-00c8f4cd-c6eb-4638-9506-cf45b43ec315.png" width="80%" height="80%">
 
 <img src="https://user-images.githubusercontent.com/88702793/130399265-8d7d14f3-7ebf-400f-a9be-e76203564ea6.png" width="100%" height="100%">
-
-<직렬과 병렬 프로그램의 예측 결과를 비교한 표>
-
-<img src="https://user-images.githubusercontent.com/87114999/130406406-a6a35312-7937-4f22-b9c4-510b9410730d.png" width="60%" height="60%">
-
-
-
-
