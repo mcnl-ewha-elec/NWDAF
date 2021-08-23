@@ -34,7 +34,7 @@ adaboost series program to predict next day's energy consumption of Smart Factor
 ![image](https://user-images.githubusercontent.com/88702793/130399970-812ef806-ed93-41d4-a512-30a8cc0d0484.png)
 
 <병렬과 직렬 프로그램의 예측 결과를 비교한 표>
-![image](https://user-images.githubusercontent.com/88702793/130400511-05f1af4c-729f-431d-9ab9-c79efab9dad7.png)
+![image](https://user-images.githubusercontent.com/88702793/130400635-cfa01ecf-372c-4b06-8193-fba734fa2061.png)
 
 (이때 병렬 모델의 개수는 13개로 함)
 
