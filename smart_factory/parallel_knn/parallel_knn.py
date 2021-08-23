@@ -105,7 +105,7 @@ repeatnum = int(repeatnum)
 KNNmodel_list=[]
 modelnum = 1
 for datanum in range(tot_model):
-    k = 38  #square root of the total number of samples
+    k = round(1440 ** 0.5) #k=square root of the total number of samples inside each model
     KNNmodel_list=Model.KNNModel(k,in_energylist[datanum], energylist[datanum+1],modelnum,KNNmodel_list)
     modelnum += 1
 
