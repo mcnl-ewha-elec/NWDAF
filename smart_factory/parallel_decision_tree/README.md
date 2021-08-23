@@ -36,6 +36,8 @@ decision tree parallel program to predict next day's energy consumption of Smart
 
 
 <모델 개수에 따른 프로그램 예측 결과의 RMSE값을 나타낸 표>
+![image](https://user-images.githubusercontent.com/87114999/130408768-46ed78ac-2dd0-48ff-a9e4-12ccd9495a3e.png)
+
 ![image](https://user-images.githubusercontent.com/88702793/130402181-3191505d-883e-430d-9c66-91d8127743dd.png)
 
 
