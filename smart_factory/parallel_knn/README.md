@@ -1,9 +1,9 @@
 # NWDAF
 ## 프로그램 명칭(국문)
-다음날 스마트팩토리 에너지 사용량을 예측하는 의사결정나무 병렬 프로그램
+다음날 스마트팩토리 에너지 사용량을 예측하는 최근접이웃 병렬 프로그램
 
 ## 알고리즘 명칭(영문)
-decision tree parallel program to predict next day's energy consumption of Smart Factory
+knn parallel program to predict next day's energy consumption of Smart Factory
 
 ## 발명자 리스트
 심서영, 여현영, 홍수민, 차채연, 박형곤
@@ -20,14 +20,14 @@ decision tree parallel program to predict next day's energy consumption of Smart
 - aachensflasershaping.csv
 총 4가지 파일을 다운받아서 SW_preprocessing.py를 실행시켜 프로그램 실행에 필요한 데이터를 만든다.
 
-2. SW_makemodel.py를 실행시켜 프로그램 실행에 필요한 decision tree 모델을 만든다.
+2. SW_makemodel.py를 실행시켜 프로그램 실행에 필요한 knn 모델을 만든다.
 
 3. 파일을 실행시키고 원하는 예측하고자 하는 날짜를 선택한다.
 -1주차 (5/18-5/24):5/25 예측, 2주차(5/25-5/31):6/1 예측, 3주차(6/1-6/7):6/8 예측, 4주차(6/8-6/14):6/15 예측
 
 4. EMA 여부를 선택한다.
 
-*decision tree 모델의 개수에 따라 성능이 달라질 수 있으므로 목적에 맞추어 모델의 개수를 조정할 수 있다.
+*knn 모델의 개수에 따라 성능이 달라질 수 있으므로 목적에 맞추어 모델의 개수를 조정할 수 있다.
 
 ## 알고리즘 실행 결과에 대한 설명
 
@@ -39,7 +39,8 @@ decision tree parallel program to predict next day's energy consumption of Smart
 ![image](https://user-images.githubusercontent.com/88702793/130399265-8d7d14f3-7ebf-400f-a9be-e76203564ea6.png)
 
 <직렬과 병렬 프로그램의 예측 결과를 비교한 표>
-![image](https://user-images.githubusercontent.com/88702793/130401009-f94e9dfb-3f37-4f90-b2f2-bde5663fe8d5.png)
+![image](https://user-images.githubusercontent.com/88702793/130401332-b14a06ff-eb74-4b78-ba2e-a557f9d5ab65.png)
+
 
 
 
