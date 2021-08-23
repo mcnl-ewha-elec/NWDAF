@@ -1,6 +1,5 @@
-# NWDAF
 ## 프로그램 명칭(국문)
-다음날 스마트팩토리 에너지 사용량을 예측하는 최근접이웃 병렬 프로그램
+다중 병렬 최근접 이웃 알고리즘의 예측 오차를 이용한 가중 모델 방식을 이용한 에너지 사용량 예측 시뮬레이터
 
 ## 알고리즘 명칭(영문)
 knn parallel program to predict next day's energy consumption of Smart Factory
@@ -39,9 +38,3 @@ knn parallel program to predict next day's energy consumption of Smart Factory
 <img src = "https://user-images.githubusercontent.com/87114999/130408954-ca4cd7cb-d756-434a-88b3-a773c1107b1d.png" width="80%" height="80%">
 
 <img src = "https://user-images.githubusercontent.com/88702793/130402304-22a04559-3890-42f2-9d56-e856fe7c57ee.png" width="100%" height="100%">
-
-<직렬과 병렬 프로그램의 예측 결과를 비교한 표>
-
-<img src = "https://user-images.githubusercontent.com/87114999/130405159-ad7b045d-6040-423b-8ca2-d644e988786c.png" width="60%" height="60%">
-
-
