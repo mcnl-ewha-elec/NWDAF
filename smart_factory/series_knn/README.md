@@ -1,6 +1,5 @@
-# NWDAF
 ## 프로그램 명칭(국문)
-다음날 스마트팩토리 에너지 사용량을 예측하는 최근접이웃 직렬 프로그램
+스마트 팩토리에서 최근접 이웃 방법을 이용한 에너지 사용량 예측 시뮬레이터
 
 ## 알고리즘 명칭(영문)
 knn series program to predict next day's energy consumption of Smart Factory
@@ -33,12 +32,3 @@ knn series program to predict next day's energy consumption of Smart Factory
 <프로그램 예측 결과의 RMSE값을 나타낸 표>
 
 <img src="https://user-images.githubusercontent.com/87114999/130404561-0474cdaf-a876-4245-a35c-e33f5b6cbeb8.png" width="60%" height="60%">
-
-
-<병렬과 직렬 프로그램의 예측 결과를 비교한 표>
-
-<img src="https://user-images.githubusercontent.com/87114999/130410418-7bc2dd52-ee53-43a5-912e-ac4235cd3cf8.png" width="60%" height="60%">
-
-
-
-(이때 병렬 모델의 개수는 13개로 함)
