@@ -35,6 +35,8 @@ adaboost parallel program to predict next day's energy consumption of Smart Fact
 ![ada_parallel](https://user-images.githubusercontent.com/87114999/130406331-3734120e-2888-4f17-8fc3-c567e89882df.png)
 
 <모델 개수에 따른 프로그램 예측 결과의 RMSE값을 나타낸 표>
+![image](https://user-images.githubusercontent.com/87114999/130408860-00c8f4cd-c6eb-4638-9506-cf45b43ec315.png)
+
 ![image](https://user-images.githubusercontent.com/88702793/130399265-8d7d14f3-7ebf-400f-a9be-e76203564ea6.png)
 
 <직렬과 병렬 프로그램의 예측 결과를 비교한 표>
