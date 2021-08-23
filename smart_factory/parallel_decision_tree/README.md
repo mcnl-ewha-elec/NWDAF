@@ -1,16 +1,16 @@
 ## 프로그램 명칭(국문)
 다중 병렬 의사 결정 나무의 예측 오차를 이용한 가중 모델 방식을 이용한 에너지 사용량 예측 시뮬레이터
 
-## 알고리즘 명칭(영문)
+## 프로그램 명칭(영문)
 Energy consumption prediction simulator using weighted model using prediction error of multiple parallel decision tree models
 
 ## 발명자 리스트
 심서영, 여현영, 홍수민, 차채연, 박형곤
 
-## 알고리즘 전반적인 목적
+## 프로그램 전반적인 목적
 본 프로그램은 규칙성이 없는 에너지 사용량 데이터를 학습하고 다음날 에너지 사용량을 예측할 때, 그 성능을 높이기 위해 고안되었다. 데이터를 학습하는 방식은 parallel 방식으로 각각의 모델의 평균 제곱근 오차(RMSE)값을 기준으로 성능이 좋은 모델에 더 높은 가중치를 설정하여 하나의 모델을 만듦으로서 프로그램의 예측 성능을 높인다. 본 프로그램에서는 알고리즘이 예측한 사용량과 실제 사용량의 평균 제곱근 오차(RMSE)값으로 성능을 확인한다. EMA 저역통과필터를 사용해서 data의 noise를 줄여 성능을 높였다.
 
-## 알고리즘 실행 방법
+## 프로그램 실행 방법
 1. https://data.lab.fiware.org/dataset/smart_energy_data-_aachen__cologne_smart_factory 에서
 
 - aachensf3drobotwelter.csv
@@ -28,7 +28,7 @@ Energy consumption prediction simulator using weighted model using prediction er
 
 *decision tree 모델의 개수에 따라 성능이 달라질 수 있으므로 목적에 맞추어 모델의 개수를 조정할 수 있다.
 
-## 알고리즘 실행 결과에 대한 설명
+## 프로그램 실행 결과에 대한 설명
 
 <프로그램 예측 결과의 RMSE값을 나타낸 표>
 
