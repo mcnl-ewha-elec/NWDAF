@@ -31,11 +31,13 @@ adaboost series program to predict next day's energy consumption of Smart Factor
 ## 알고리즘 실행 결과에 대한 설명
 
 <프로그램 예측 결과의 RMSE값을 나타낸 표>
-![ada_series](https://user-images.githubusercontent.com/87114999/130406593-85a416fc-ea5e-49c3-84e0-027339cc0913.png)
+
+<img src="https://user-images.githubusercontent.com/87114999/130406593-85a416fc-ea5e-49c3-84e0-027339cc0913.png" width="60%" height="60%">
 
 
 <병렬과 직렬 프로그램의 예측 결과를 비교한 표>
-![adaboost](https://user-images.githubusercontent.com/87114999/130406603-ce2d5b70-8734-4714-9bc6-9a73881ef9ba.png)
+
+<img src="https://user-images.githubusercontent.com/87114999/130406603-ce2d5b70-8734-4714-9bc6-9a73881ef9ba.png" width="60%" height="60%">
 
 
 (이때 병렬 모델의 개수는 13개로 함)
