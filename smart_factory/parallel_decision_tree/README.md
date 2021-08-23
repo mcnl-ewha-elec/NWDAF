@@ -1,9 +1,8 @@
-# NWDAF
 ## 프로그램 명칭(국문)
-다음날 스마트팩토리 에너지 사용량을 예측하는 의사결정나무 병렬 프로그램
+다중 병렬 의사 결정 나무의 예측 오차를 이용한 가중 모델 방식을 이용한 에너지 사용량 예측 시뮬레이터
 
 ## 알고리즘 명칭(영문)
-decision tree parallel program to predict next day's energy consumption of Smart Factory
+Energy consumption prediction simulator using weighted model using prediction error of multiple parallel decision trees
 
 ## 발명자 리스트
 심서영, 여현영, 홍수민, 차채연, 박형곤
@@ -41,11 +40,3 @@ decision tree parallel program to predict next day's energy consumption of Smart
 <img src="https://user-images.githubusercontent.com/87114999/130408768-46ed78ac-2dd0-48ff-a9e4-12ccd9495a3e.png" width="80%" height="80%">
 
 <img src="https://user-images.githubusercontent.com/88702793/130402181-3191505d-883e-430d-9c66-91d8127743dd.png" width="100%" height="100%">
-
-
-<직렬과 병렬 프로그램의 예측 결과를 비교한 표>
-
-<img src="https://user-images.githubusercontent.com/87114999/130406819-2a860eb9-3234-4772-a5e8-23da5c717cd3.png" width="60%" height="60%">
-
-
-
