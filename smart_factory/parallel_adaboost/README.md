@@ -2,7 +2,7 @@
 다중 병렬 에이다부스트의 예측 오차를 이용한 가중 모델 방식을 이용한 에너지 사용량 예측 시뮬레이터
 
 ## 알고리즘 명칭(영문)
-adaboost parallel program to predict next day's energy consumption of Smart Factory
+Energy consumption prediction simulator using weighted model using prediction error of multiple adaboosts
 
 ## 발명자 리스트
 심서영, 여현영, 홍수민, 차채연, 박형곤
