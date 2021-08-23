@@ -39,5 +39,6 @@ decision tree parallel program to predict next day's energy consumption of Smart
 ![image](https://user-images.githubusercontent.com/88702793/130399265-8d7d14f3-7ebf-400f-a9be-e76203564ea6.png)
 
 <직렬과 병렬 프로그램의 예측 결과를 비교한 표>
-![image](https://user-images.githubusercontent.com/88702793/130400916-fd96f3f8-cef4-442a-a9be-023efbfe7c2d.png)
+![image](https://user-images.githubusercontent.com/88702793/130401009-f94e9dfb-3f37-4f90-b2f2-bde5663fe8d5.png)
+
 
