@@ -18,23 +18,20 @@ adaboost program to predict next day's energy consumption of Smart Factory
 - aachensfbending.csv
 - aachensflasercutting.csv
 - aachensflasershaping.csv
-총 4가지 파일을 다운받아서 data_preprocessing.py를 실행시켜 머신러닝 알고리즘 실행에 필요한 데이터를 만든다.
+총 4가지 파일을 다운받아서 SW_preprocessing.py를 실행시켜 프로그램 실행에 필요한 데이터를 만든다.
 
-2. parallel_adaboost.py를 싫ㅇ
+2. SW_makemodel.py를 실행시켜 프로그램 실행에 필요한 에이다부스트 모델을 만든다.
 
-3. 해당 파일 안에 각각 Adaboost, DecisionTree, K-NN 총 3가지 머신러닝 모델이 있으므로 원하는 모델을 제외하고 주석처리한다.
+3. 파일을 실행시키고 원하는 예측하고자 하는 날짜를 선택한다.
 
-4. 파일을 실행시키고 원하는 예측하고자 하는 날짜를 선택한다.
+4. EMA 여부를 선택한다.
 
 1주차 (5/18-5/24):5/25 예측, 2주차(5/25-5/31):6/1 예측, 3주차(6/1-6/7):6/8 예측, 4주차(6/8-6/14):6/15 예측
-알고리즘 결과에 대한 설명
-<알고리즘이 예측한 사용량과 실제 사용량의 RMSE값을 머신러닝 모델별, 알고리즘 별로 비교한 표>
+
 
 ## 알고리즘 실행 결과에 대한 설명
 
-![telegram-cloud-photo-size-5-6098029360847105161-y](https://user-images.githubusercontent.com/88702793/128999072-eb354bcb-c2f1-4256-a573-72b0edfad6d4.jpg)
+<알고리즘이 예측한 사용량과 실제 사용량의 RMSE값을 나타낸 표>
 
-![telegram-cloud-photo-size-5-6098029360847105165-y](https://user-images.githubusercontent.com/88702793/128999145-417d7f27-3c11-47fb-b1ad-7fb4f5857e44.jpg)
+![image](https://user-images.githubusercontent.com/88702793/130397932-fb5793a6-c118-4460-9830-b01ca7f56022.png)
 
-
-@Decisoin Tree는 알고리즘 돌리는 중
