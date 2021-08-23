@@ -32,12 +32,14 @@ knn parallel program to predict next day's energy consumption of Smart Factory
 ## 알고리즘 실행 결과에 대한 설명
 
 <프로그램 예측 결과의 RMSE값을 나타낸 표>
+![knn_parallel](https://user-images.githubusercontent.com/87114999/130404808-b3443233-792e-486d-8357-a1835776aa81.png)
 
-![image](https://user-images.githubusercontent.com/88702793/130397932-fb5793a6-c118-4460-9830-b01ca7f56022.png)
 
 <모델 개수에 따른 프로그램 예측 결과의 RMSE값을 나타낸 표>
 
-![image](https://user-images.githubusercontent.com/88702793/130402304-22a04559-3890-42f2-9d56-e856fe7c57ee.png)
+<img width="659" alt="graph" src="https://user-images.githubusercontent.com/87114999/130404777-a4f23b71-9391-4aea-ae3e-0de871bf660e.png">
+![knn_model](https://user-images.githubusercontent.com/87114999/130404784-ec7e2d89-5eab-42c6-aee2-08b2b4dbedee.png)
+
 
 
 <직렬과 병렬 프로그램의 예측 결과를 비교한 표>
