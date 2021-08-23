@@ -31,10 +31,9 @@ decision tree series program to predict next day's energy consumption of Smart F
 ## 알고리즘 실행 결과에 대한 설명
 
 <프로그램 예측 결과의 RMSE값을 나타낸 표>
-![image](https://user-images.githubusercontent.com/88702793/130399970-812ef806-ed93-41d4-a512-30a8cc0d0484.png)
+![DT_series](https://user-images.githubusercontent.com/87114999/130406889-72f54f0e-6040-4f97-bff6-32f9bcf990b5.png)
 
 <병렬과 직렬 프로그램의 예측 결과를 비교한 표>
-![telegram-cloud-document-5-6131714024389215023](https://user-images.githubusercontent.com/88702793/130401607-dc02d2e6-3555-40d4-b94b-611483710482.jpg)
-
+![decisiontree](https://user-images.githubusercontent.com/87114999/130406902-b4fe7c42-0fa9-4b3b-96dd-6b3e98119e64.png)
 
 (이때 병렬 모델의 개수는 13개로 함)
