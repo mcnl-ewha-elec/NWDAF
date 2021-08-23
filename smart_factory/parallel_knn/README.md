@@ -41,7 +41,7 @@ knn parallel program to predict next day's energy consumption of Smart Factory
 
 ![knn_model](https://user-images.githubusercontent.com/87114999/130404784-ec7e2d89-5eab-42c6-aee2-08b2b4dbedee.png)
 
-
+![image](https://user-images.githubusercontent.com/88702793/130402304-22a04559-3890-42f2-9d56-e856fe7c57ee.png)
 
 <직렬과 병렬 프로그램의 예측 결과를 비교한 표>
 ![knn](https://user-images.githubusercontent.com/87114999/130405159-ad7b045d-6040-423b-8ca2-d644e988786c.png)
