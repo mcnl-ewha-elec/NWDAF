@@ -32,17 +32,20 @@ decision tree parallel program to predict next day's energy consumption of Smart
 ## 알고리즘 실행 결과에 대한 설명
 
 <프로그램 예측 결과의 RMSE값을 나타낸 표>
-![DT_parallel](https://user-images.githubusercontent.com/87114999/130406803-ae9d6bda-9f72-4b0b-9eef-577c550e6371.png)
+
+<img src="https://user-images.githubusercontent.com/87114999/130406803-ae9d6bda-9f72-4b0b-9eef-577c550e6371.png" width="60%" height="60%">
 
 
 <모델 개수에 따른 프로그램 예측 결과의 RMSE값을 나타낸 표>
-![image](https://user-images.githubusercontent.com/87114999/130408768-46ed78ac-2dd0-48ff-a9e4-12ccd9495a3e.png)
 
-![image](https://user-images.githubusercontent.com/88702793/130402181-3191505d-883e-430d-9c66-91d8127743dd.png)
+<img src="https://user-images.githubusercontent.com/87114999/130408768-46ed78ac-2dd0-48ff-a9e4-12ccd9495a3e.png" width="80%" height="80%">
+
+<img src="https://user-images.githubusercontent.com/88702793/130402181-3191505d-883e-430d-9c66-91d8127743dd.png" width="100%" height="100%">
 
 
 <직렬과 병렬 프로그램의 예측 결과를 비교한 표>
-![decisiontree](https://user-images.githubusercontent.com/87114999/130406819-2a860eb9-3234-4772-a5e8-23da5c717cd3.png)
+
+<img src="https://user-images.githubusercontent.com/87114999/130406819-2a860eb9-3234-4772-a5e8-23da5c717cd3.png" width="60%" height="60%">
 
 
 
