@@ -31,7 +31,8 @@ knn series program to predict next day's energy consumption of Smart Factory
 ## 알고리즘 실행 결과에 대한 설명
 
 <프로그램 예측 결과의 RMSE값을 나타낸 표>
-![image](https://user-images.githubusercontent.com/88702793/130399970-812ef806-ed93-41d4-a512-30a8cc0d0484.png)
+![knn_series](https://user-images.githubusercontent.com/87114999/130404561-0474cdaf-a876-4245-a35c-e33f5b6cbeb8.png)
+
 
 <병렬과 직렬 프로그램의 예측 결과를 비교한 표>
 
