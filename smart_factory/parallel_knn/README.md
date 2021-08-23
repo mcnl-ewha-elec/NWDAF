@@ -36,10 +36,7 @@ knn parallel program to predict next day's energy consumption of Smart Factory
 
 
 <모델 개수에 따른 프로그램 예측 결과의 RMSE값을 나타낸 표>
-
-<img width="800" alt="graph" src="https://user-images.githubusercontent.com/87114999/130404777-a4f23b71-9391-4aea-ae3e-0de871bf660e.png">
-
-![knn_model](https://user-images.githubusercontent.com/87114999/130404784-ec7e2d89-5eab-42c6-aee2-08b2b4dbedee.png)
+![image](https://user-images.githubusercontent.com/87114999/130408954-ca4cd7cb-d756-434a-88b3-a773c1107b1d.png)
 
 ![image](https://user-images.githubusercontent.com/88702793/130402304-22a04559-3890-42f2-9d56-e856fe7c57ee.png)
 
