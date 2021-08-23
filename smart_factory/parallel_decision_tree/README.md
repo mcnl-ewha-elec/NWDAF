@@ -2,7 +2,7 @@
 다중 병렬 의사 결정 나무의 예측 오차를 이용한 가중 모델 방식을 이용한 에너지 사용량 예측 시뮬레이터
 
 ## 알고리즘 명칭(영문)
-Energy consumption prediction simulator using weighted model using prediction error of multiple parallel decision trees
+Energy consumption prediction simulator using weighted model using prediction error of multiple parallel decision tree models
 
 ## 발명자 리스트
 심서영, 여현영, 홍수민, 차채연, 박형곤
