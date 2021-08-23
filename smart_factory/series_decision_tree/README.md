@@ -1,5 +1,5 @@
 ## 프로그램 명칭(국문)
-다음날 스마트팩토리 에너지 사용량을 예측하는 의사결정나무 직렬 프로그램
+스마트 팩토리에서 의사 결정 나무를 이용한 에너지 사용량 예측 시뮬레이터
 
 ## 알고리즘 명칭(영문)
 decision tree series program to predict next day's energy consumption of Smart Factory
@@ -32,9 +32,3 @@ decision tree series program to predict next day's energy consumption of Smart F
 <프로그램 예측 결과의 RMSE값을 나타낸 표>
 
 <img src="https://user-images.githubusercontent.com/87114999/130406889-72f54f0e-6040-4f97-bff6-32f9bcf990b5.png" width="60%" height="60%">
-
-<병렬과 직렬 프로그램의 예측 결과를 비교한 표>
-
-<img src="https://user-images.githubusercontent.com/87114999/130406902-b4fe7c42-0fa9-4b3b-96dd-6b3e98119e64.png" width="60%" height="60%">
-
-(이때 병렬 모델의 개수는 13개로 함)
