@@ -3,7 +3,7 @@
 다음날 스마트팩토리 에너지 사용량을 예측하는 에이다부스트 병렬 프로그램
 
 ## 알고리즘 명칭(영문)
-adaboost program to predict next day's energy consumption of Smart Factory
+adaboost parallel program to predict next day's energy consumption of Smart Factory
 
 ## 발명자 리스트
 심서영, 여현영, 홍수민, 차채연, 박형곤
