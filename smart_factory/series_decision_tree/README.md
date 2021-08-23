@@ -2,7 +2,7 @@
 스마트 팩토리에서 의사 결정 나무를 이용한 에너지 사용량 예측 시뮬레이터
 
 ## 알고리즘 명칭(영문)
-decision tree series program to predict next day's energy consumption of Smart Factory
+Energy consumption prediction simulator using decision tree in smart factory
 
 ## 발명자 리스트
 심서영, 여현영, 홍수민, 차채연, 박형곤
