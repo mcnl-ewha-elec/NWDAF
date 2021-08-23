@@ -1,6 +1,6 @@
 # NWDAF
 ## 프로그램 명칭(국문)
-다음날 스마트팩토리 에너지 사용량을 예측하는 에이다부스트 프로그램
+다음날 스마트팩토리 에너지 사용량을 예측하는 에이다부스트 병렬 프로그램
 
 ## 알고리즘 명칭(영문)
 adaboost program to predict next day's energy consumption of Smart Factory
