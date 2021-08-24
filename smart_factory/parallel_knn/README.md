@@ -37,4 +37,5 @@ Energy consumption prediction simulator using weighted model using prediction er
 
 <img src = "https://user-images.githubusercontent.com/87114999/130408954-ca4cd7cb-d756-434a-88b3-a773c1107b1d.png" width="80%" height="80%">
 
-<img src = "https://user-images.githubusercontent.com/88702793/130402304-22a04559-3890-42f2-9d56-e856fe7c57ee.png" width="100%" height="100%">
+<img src = "https://user-images.githubusercontent.com/88702793/130544029-0caaa313-fc0c-42a7-80a3-47d91d3039d7.png
+" width="100%" height="100%">
