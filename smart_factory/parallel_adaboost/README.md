@@ -36,6 +36,7 @@ Energy consumption prediction simulator using weighted model using prediction er
 
 <모델 개수에 따른 프로그램 예측 결과의 RMSE값을 나타낸 표>
 
-<img src="https://user-images.githubusercontent.com/87114999/130408860-00c8f4cd-c6eb-4638-9506-cf45b43ec315.png" width="80%" height="80%">
+<img src="https://user-images.githubusercontent.com/87114999/130544550-dfe4fb83-a7f6-4dd4-8c99-c60f8524058a.png" width="80%" height="80%">
+
 
 <img src="https://user-images.githubusercontent.com/88702793/130399265-8d7d14f3-7ebf-400f-a9be-e76203564ea6.png" width="100%" height="100%">
