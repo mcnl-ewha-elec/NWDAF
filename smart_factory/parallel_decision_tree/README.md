@@ -17,14 +17,12 @@ Energy consumption prediction simulator using weighted model using prediction er
 - aachensfbending.csv
 - aachensflasercutting.csv
 - aachensflasershaping.csv
-총 4가지 파일을 다운받아서 SW_preprocessing.py를 실행시켜 프로그램 실행에 필요한 데이터를 만든다.
+총 4가지 파일을 다운받는다(첨부되어있는 파일에 전부 포함되어있으나 없다면 위의 주소를 통해 다운받는다).
 
-2. SW_makemodel.py를 실행시켜 프로그램 실행에 필요한 decision tree 모델을 만든다.
-
-3. 파일을 실행시키고 원하는 예측하고자 하는 날짜를 선택한다.
+2. 파일을 실행시키고 원하는 예측하고자 하는 날짜를 선택한다.
 -1주차 (5/18-5/24):5/25 예측, 2주차(5/25-5/31):6/1 예측, 3주차(6/1-6/7):6/8 예측, 4주차(6/8-6/14):6/15 예측
 
-4. EMA 여부를 선택한다.
+3. EMA 여부를 선택한다.
 
 *decision tree 모델의 개수에 따라 성능이 달라질 수 있으므로 목적에 맞추어 모델의 개수를 조정할 수 있다.
 
