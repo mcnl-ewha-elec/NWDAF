@@ -19,7 +19,7 @@ Energy consumption prediction simulator using knn in smart factory
 - aachensflasershaping.csv
 총 4가지 파일을 다운받는다(첨부되어있는 파일에 전부 포함되어있으나 없다면 위의 주소를 통해 다운받는다).
 
-2. 파일을 실행시키고 원하는 예측하고자 하는 날짜를 선택한다.
+2. series_knn.py 파일을 실행시키고 원하는 예측하고자 하는 날짜를 선택한다.
 -1주차 (5/18-5/24):5/25 예측, 2주차(5/25-5/31):6/1 예측, 3주차(6/1-6/7):6/8 예측, 4주차(6/8-6/14):6/15 예측
 
 3. EMA 여부를 선택한다.
